@@ -16,4 +16,13 @@ class Calculator
         int Mul (double, double);
 };
 
-#endif//CALCULATOR_H
+class Horse
+{
+    public:
+        int Tail (double, double);
+        int Mane (double, double);
+        int Hoof (double, double);
+};
+
+#endif
+//CALCULATOR_H
