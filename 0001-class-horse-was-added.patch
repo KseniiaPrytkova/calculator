@@ -1,0 +1,32 @@
+From 710122b1bc355ea7243d15cc2b7694671e601a4c Mon Sep 17 00:00:00 2001
+From: Kseniia Prytkova <kseniia.prytkova@globallogic.com>
+Date: Wed, 27 Feb 2019 15:56:35 +0200
+Subject: [PATCH] class horse was added
+
+Now it is possible to ride a horse. And touch her hoofs.
+
+Signed-off-by: Kseniia Prytkova <kseniia.prytkova@globallogic.com>
+---
+ calculator.h | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/calculator.h b/calculator.h
+index fdf5ddd..f3a5850 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -9,4 +9,12 @@ class Calculator
+         int Mul (double, double);
+ };
+ 
++class Horse
++{
++    public:
++        int Tail (double, double);
++        int Mane (double, double);
++        int Hoof (double, double);
++};
++
+ #endif//CALCULATOR_H
+-- 
+2.7.4
+
