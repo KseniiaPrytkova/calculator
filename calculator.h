@@ -1,6 +1,13 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
+class horse
+{
+	public:
+		horse();
+		horse();
+};
+
 class Calculator
 {
     public:
