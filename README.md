@@ -91,7 +91,7 @@ run `$ git log` and u will see, that last two commits are signed by u.
 ```
 $ git format-patch HEAD -2
 ```
-(`$ git format-patch par1 par2` par1 - commit(hash) FROM starting from which u want to make you patches; par2 - how much patches you want)
+(`$ git format-patch par1 par2` par1 - commit (hash) FROM starting from which u want to make you patches; par2 - how much patches you want)
 
 ## combine 2 commits into one patch
 ```
@@ -127,7 +127,7 @@ $ git cherry-pick e0ea21b
 > * hint: with 'git add <paths>' or 'git rm <paths>' 
 > * hint: and commit the result with 'git commit'
   
-we need to fix git conflict (`$ git status` and `vim <file_with_conflict>`) and then:
+we need to fix git conflict (`$ git status` and `$ vim <file_with_conflict>`) and then:
 ```
 $ git cherry-pick --continue
 ```
