@@ -1,5 +1,7 @@
 # calculator (nothing about counting, but 100% about GIT)
-the best thing is [**Pro Git book**](https://git-scm.com/book/en/v2), but ..
+the best thing is [**Pro Git book**](https://git-scm.com/book/en/v2), also [**How to Write a Git Commit Message**](https://chris.beams.io/posts/git-commit/)
+
+but ..
 
 The task is:
 
