@@ -75,8 +75,8 @@ $ git rebase --continue
 
 ## sign commits
 ```
-#$ git show -n2
- $ git rebase -i HEAD^^ 
+$ git show -n2
+$ git rebase -i HEAD^^ 
 ```
 use `edit` command instead of default `edit`:
 
@@ -114,9 +114,9 @@ $ git rebase --continue
 ## get code from the remote
 
 ```
- $ git fetch gitlab
- $ git log gitlab/master
-#$ git branch -av
+$ git fetch gitlab
+$ git log gitlab/master
+$ git branch -av
 ```
 ## grab the commit
 `$ git log gitlab/master` to figure out hash of the commit.
