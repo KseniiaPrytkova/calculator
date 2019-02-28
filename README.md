@@ -61,7 +61,7 @@ or by hands, up on you. After conflict has been resolved:
 $ git add calculator.cpp
 $ git rebase --continue
 ```
-Successfully rebased and updated refs/heads/master? No? `git rebase --abort` && try again.
+**Successfully rebased and updated refs/heads/master? No? `git rebase --abort` && try again.**
 
 > * 19db02e (HEAD -> master) formatting: use tabs instead of spaces
 > * 97c1543 fix truncation error
@@ -74,7 +74,7 @@ Successfully rebased and updated refs/heads/master? No? `git rebase --abort` && 
 ## sign commits
 ```
 #$ git show -n2
- $  git rebase -i HEAD^^ 
+ $ git rebase -i HEAD^^ 
 ```
 use `edit` command instead of default `edit`:
 
