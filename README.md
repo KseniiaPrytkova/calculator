@@ -29,18 +29,22 @@ view all existing commits
 $ git log
 ```
 you'll see:
+
 ![list_of_commits](imgs/list_of_commits.png)
+
 or we can use smth like `$ git log --oneline --decorate`, whatever.
+
 ## swap commits
 From the list of commits you can see that we need to swap the last 2 commits, so:
 ```
 $ git rebase -i HEAD^^
 ```
 (or `git rebase -i <hash>`)
+
 ![split_commits](imgs/split_commits.png)
+
 and git will say:
 > error: could not apply 4ad40a3... fix truncation error
-
 > When you have resolved this problem, run "git rebase --continue".
 If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
@@ -69,9 +73,11 @@ f03784b add header guard
 ```
 #$ git show -n2
 $  git rebase -i HEAD^^ 
-````
+```
 use `edit` command instead of default `edit`:
+
 ![edit_commits](imgs/edit_commits.png)
+
 next action will be performed twice, because we have 2 commits to change:
 ```
 $ git commit --amend -v -s
@@ -88,8 +94,9 @@ $ git format-patch HEAD -2
 $ git rebase -i HEAD^^^
 ```
 use `squash` command:
+
 ![squash_commits](imgs/squash_commits.png)
-```
+
 sign your new commit and continue:
 ```
 $ git commit -s --amend
@@ -101,7 +108,7 @@ $ git rebase --continue
 ```
 $ git fetch gitlab
 $ git log gitlab/master
-# $ git branch -av
+#$ git branch -av
 ```
 ## grab the commit
 `$ git log gitlab/master` to figure out hash of the commit.
@@ -110,13 +117,12 @@ $ git log --oneline gitlab/master
 $ git cherry-pick e0ea21b
 ```
 > error: could not apply e0ea21b... add a multiplication operation
-hint: after resolving the conflicts, mark the corrected paths
-hint: with 'git add <paths>' or 'git rm <paths>'
-hint: and commit the result with 'git commit'
-
+> hint: after resolving the conflicts, mark the corrected paths
+> hint: with 'git add <paths>' or 'git rm <paths>'
+> hint: and commit the result with 'git commit'
 we need to fix git conflict (`$ git status` and `vim <file_with_conflict>`) and then:
 ```
-git cherry-pick --continue
+$ git cherry-pick --continue
 ```
 ## push the result into my own repo
 create repo first, then:
