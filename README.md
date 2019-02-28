@@ -133,7 +133,7 @@ we need to fix git conflict (`$ git status` and `$ vim <file_with_conflict>`) an
 ```
 $ git cherry-pick --continue
 ```
-## push the result into my own repo
+## push the result into your own repo
 create repo first, then:
 ```
 $ git remote add my_github https://github.com/KseniiaPrytkova/calculator.git
